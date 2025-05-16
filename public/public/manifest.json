@@ -8,34 +8,34 @@
   "description": "A CV web application created by Shaquil Nourrice",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "icons/list.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "icons/list.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "icons/maskable_icon.png",
-      "sizes": "192x192",
+      "src": "icons/list.maskable.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }
   ],
   "screenshots": [
-    {
-      "src": "longscreen.png",
-      "sizes": "540x720",
-      "type": "image/png",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "widescreen.png",
-      "sizes": "1024x768",
-      "type": "image/png",
-      "form_factor": "wide"
-    }
-  ]
+  {
+    "src": "icons/longscreen.png",
+    "sizes": "610x769",
+    "type": "image/png",
+    "form_factor": "narrow"
+  },
+  {
+    "src": "icons/widescreen.png",
+    "sizes": "1920x1080",
+    "type": "image/png",
+    "form_factor": "wide"
+  }
+]
 }
