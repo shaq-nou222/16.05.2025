@@ -1,0 +1,149 @@
+/*CSS VARIABLES*/
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --accent: #89CFF0;
+  --hover: #0a9396;
+  --font-main: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-light: #121212;
+    --text-light: #ffffff;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Navigation - Mobile First */
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--accent);
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Button for index */
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  margin: 0.5rem 0.5rem 0 0;
+  background-color: var(--accent);
+  color: var(--text-dark);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.flex-item {
+  flex: 1 1 45%;
+  min-width: 150px;
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid-item {
+  background: #eaeaea;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+h1, h2, h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  nav {
+    position: sticky;
+    top: 0;
+    bottom: unset;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flex-container {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+main section {
+  padding: 1rem;
+}
+
+
+
