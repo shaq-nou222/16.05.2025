@@ -18,9 +18,9 @@
       "type": "image/png"
     },
     {
-      "src": "/icons/square.icon.png",
+      "src": "/icons/square.icon.webp",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "any"
     }
   ],
